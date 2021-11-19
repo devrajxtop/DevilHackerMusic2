@@ -231,7 +231,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/af3dad3866909b93b036b.png"
+            thumb_name = "https://telegra.ph/file/dde656280971213dc8e16.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -315,7 +315,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🤞 ṀṳṠḭḉ\nɅɗɗɘɗ 💿 Søɳʛ❗️\n🔊 Ʌʈ 💞 Ƥøsɩʈɩøɳ » `{}` 🌷 ...**".format(position),
+            caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑 🤞\nɅɗɗɘɗ 💿 Søɳʛ❗️\n🔊 Ʌʈ 💞 Ƥøsɩʈɩøɳ » `{}` 🌷 ...**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -331,7 +331,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🤞 Mʋsɩƈ  💞\n🎸 Nøω 🔊 Ƥɭɑyɩɳʛ 😍 ØƤ 🥀 ...**".format(),
+            caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑 🤞 Mʋsɩƈ  💞\n🎸 Nøω 🔊 Ƥɭɑyɩɳʛ 😍 ØƤ 🥀 ...**".format(),
         )
 
     os.remove("final.png")
@@ -345,8 +345,8 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/af3dad3866909b93b036b.png", 
-                             caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🤞 Mʋsɩƈ\n💞Nøω 🥀 ▶️ Ƥɑʋsɘɗ 🌷 ...**"
+                             photo="https://telegra.ph/file/5bb0532ecbf663f28e685.jpg", 
+                             caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑\n💞Nøω 🥀 ▶️ Ƥɑʋsɘɗ 🌷 ...**"
     )
 
 
@@ -356,8 +356,8 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/af3dad3866909b93b036b.png", 
-                             caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🤞 Mʋsɩƈ\nNøω 🥀 ⏸ Ƥɭɑyɩɳʛ 🌷 ...**"
+                             photo="https://telegra.ph/file/5bb0532ecbf663f28e685.jpg", 
+                             caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑\nNøω 🥀 ⏸ Ƥɭɑyɩɳʛ 🌷 ...**"
     )
 
 
@@ -372,7 +372,7 @@ async def skip(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALL.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALL:
-        await message.reply_text("**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🤞 ṀṳṠḭḉ 💞\nƝøʈɦɩɳʛ 🔇 🚫 Ƥɭɑyɩɳʛ 🌷 ...**")
+        await message.reply_text("**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑 💞\nƝøʈɦɩɳʛ 🔇 🚫 Ƥɭɑyɩɳʛ 🌷 ...**")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -390,8 +390,8 @@ async def skip(_, message: Message):
                 )
 
     await message.reply_photo(
-                             photo="https://telegra.ph/file/af3dad3866909b93b036b.png", 
-                             caption=f'**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🔈 Mʋsɩƈ🤞\nNøω 🥀 ⏩ Sƙɩƥƥɘɗ 🌷 ...**'
+                             photo="https://telegra.ph/file/5bb0532ecbf663f28e685.jpg", 
+                             caption=f'**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑🤞\nNøω 🥀 ⏩ Sƙɩƥƥɘɗ 🌷 ...**'
    ) 
 
 
@@ -406,8 +406,8 @@ async def stop(_, message: Message):
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/af3dad3866909b93b036b.png", 
-                             caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🔈 Mʋsɩƈ\n🤞Nøω 🥀 ❌ Sʈøƥƥɘɗ 🌷 ...**"
+                             photo="https://telegra.ph/file/5bb0532ecbf663f28e685.jpg", 
+                             caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑\n🤞Nøω 🥀 ❌ Sʈøƥƥɘɗ 🌷 ...**"
     )
 
 
@@ -424,6 +424,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://telegra.ph/file/af3dad3866909b93b036b.png",
-                              caption="**💥 ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 🔈 Mʋsɩƈ🤞\nNøω 🥀🔥 Ʀɘɭøɑɗɘɗ 🌷 ...**"
+                              photo="https://telegra.ph/file/5bb0532ecbf663f28e685.jpg",
+                              caption="**💥 𝐃𝐄𝐕𝐑𝐀𝐉 𝐗𝐃 𝐃𝐄𝐕𝐈𝐋 𝐂𝐇𝐄𝐀𝐓𝐒 𝐎𝐏 𝐏𝐋𝐀𝐘𝐄𝐑🤞\nNøω 🥀🔥 Ʀɘɭøɑɗɘɗ 🌷 ...**"
     )
